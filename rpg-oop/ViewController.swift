@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enemyHpLabel: UILabel!
     @IBOutlet weak var enemyImg: UIImageView!
     @IBOutlet weak var chestBtn: UIButton!
+    @IBOutlet weak var enemy2Img: UIImageView!
     
     //We will def have a player and enemy so !
     var player: Player!
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         playerHpLabel.text = "\(player.hp) HP"
         
         generateRandomEnemy()
+        enemyHpLabel.text = "\(enemy.hp) HP"
     }
     
     //Want to generate a random enemy: 
@@ -38,11 +40,13 @@ class ViewController: UIViewController {
         let rand = Int(arc4random_uniform(2))
         if rand == 0 {
             enemy = Chimera(startingHp: 50, attackPwr: 12)
+            enemyImg.hidden = false
         } else {
             enemy = DevilWizard(startingHp: 60, attackPwr: 15)
+            enemy2Img.hidden = false
         }
         
-        enemyImg.hidden = false 
+        enemyHpLabel.text = "\(enemy.hp) HP"
     }
     
     @IBAction func onChestClick(sender: AnyObject) {
@@ -71,6 +75,7 @@ class ViewController: UIViewController {
             enemyHpLabel.text = ""
             printLabel.text = "Killed \(enemy.type)"
             enemyImg.hidden = true
+            enemy2Img.hidden = true
         }
     }
 }

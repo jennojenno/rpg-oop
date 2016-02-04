@@ -42,6 +42,15 @@
                                     <constraint firstAttribute="height" constant="60" id="X24-Uu-Wqe"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="enem2" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-y7-BaO">
+                                <rect key="frame" x="325" y="350" width="240" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="0VP-RG-bp9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="7GU-1Z-UHd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="170" id="plA-1x-4Tt"/>
+                                    <constraint firstAttribute="width" constant="240" id="xJl-Qa-Cdg"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="k52-w6-ThN">
                                 <rect key="frame" x="27" y="341" width="240" height="170"/>
                                 <constraints>
@@ -60,7 +69,7 @@
                                     <action selector="onChestClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sew-ZU-mTJ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="NVQ-jP-aWC">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="NVQ-jP-aWC">
                                 <rect key="frame" x="320" y="341" width="240" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="80B-Hv-zmK"/>
@@ -87,7 +96,7 @@
                                 <color key="textColor" red="0.87139169910000003" green="1" blue="0.40841028359999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="50 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23D-xw-TiM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23D-xw-TiM">
                                 <rect key="frame" x="314" y="370" width="67" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="Dw8-A5-SBn"/>
@@ -127,6 +136,7 @@
                             <constraint firstItem="rAg-X1-9Hz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TLb-HE-cbr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k52-w6-ThN" secondAttribute="bottom" constant="89" id="TUW-fN-wwj"/>
                             <constraint firstItem="pBw-h6-A9W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ulg-Zo-47e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a5t-y7-BaO" secondAttribute="bottom" constant="89" id="XTs-3i-FoI"/>
                             <constraint firstAttribute="trailing" secondItem="rAg-X1-9Hz" secondAttribute="trailing" id="Xkg-Nx-7nB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rAg-X1-9Hz" secondAttribute="bottom" id="YWc-MF-YoB"/>
                             <constraint firstItem="k52-w6-ThN" firstAttribute="top" secondItem="hEF-Lm-gIf" secondAttribute="bottom" constant="-40" id="cFT-Lk-VbI"/>
@@ -138,6 +148,7 @@
                             <constraint firstItem="pBw-h6-A9W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nnL-Gv-KfZ"/>
                             <constraint firstItem="l9s-8u-593" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pj9-Pl-xub"/>
                             <constraint firstItem="l9s-8u-593" firstAttribute="top" secondItem="B05-Rb-7OI" secondAttribute="bottom" constant="52" id="py2-S4-8X9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a5t-y7-BaO" secondAttribute="trailing" constant="15" id="uDp-XZ-7uc"/>
                             <constraint firstItem="hEF-Lm-gIf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="165" id="udC-5b-C1r"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IpK-sr-rXC" secondAttribute="bottom" constant="89" id="vD7-E5-fGm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rAg-X1-9Hz" secondAttribute="bottom" id="zH7-VP-oW2"/>
@@ -155,12 +166,20 @@
                     </view>
                     <connections>
                         <outlet property="chestBtn" destination="IpK-sr-rXC" id="76Q-ek-Bsw"/>
+                        <outlet property="enemy2Img" destination="a5t-y7-BaO" id="DMx-sI-rJi"/>
                         <outlet property="enemyHpLabel" destination="23D-xw-TiM" id="t8Q-9w-ius"/>
                         <outlet property="enemyImg" destination="NVQ-jP-aWC" id="HhX-jt-3bL"/>
                         <outlet property="playerHpLabel" destination="hEF-Lm-gIf" id="heb-Y5-UI0"/>
                         <outlet property="printLabel" destination="B05-Rb-7OI" id="gvv-pj-jZT"/>
                     </connections>
                 </viewController>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="Jxy-bA-uMS">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="6Wh-tl-Y23"/>
+                        <constraint firstAttribute="height" constant="170" id="z6a-iS-HoN"/>
+                    </constraints>
+                </imageView>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="308" y="387"/>
@@ -171,6 +190,7 @@
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
+        <image name="enem2" width="574" height="487"/>
         <image name="ground" width="768" height="164"/>
         <image name="player" width="356" height="475"/>
         <image name="print" width="550" height="83"/>
