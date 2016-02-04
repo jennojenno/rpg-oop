@@ -9,6 +9,7 @@
 import Foundation
 
 class DevilWizard: Enemy {
+    
     override var loot: [String] {
         return ["Magic want", "Amulet", "Bacon"]
     }
