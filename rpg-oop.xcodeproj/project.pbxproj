@@ -12,6 +12,9 @@
 		04902C071C6394FA0040EBA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04902C051C6394FA0040EBA6 /* Main.storyboard */; };
 		04902C091C6394FA0040EBA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04902C081C6394FA0040EBA6 /* Assets.xcassets */; };
 		04902C0C1C6394FA0040EBA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04902C0A1C6394FA0040EBA6 /* LaunchScreen.storyboard */; };
+		04902C141C63975F0040EBA6 /* character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C131C63975F0040EBA6 /* character.swift */; };
+		04902C161C6399A00040EBA6 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C151C6399A00040EBA6 /* player.swift */; };
+		04902C181C639AF40040EBA6 /* enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C171C639AF40040EBA6 /* enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		04902C081C6394FA0040EBA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04902C0B1C6394FA0040EBA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04902C0D1C6394FA0040EBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04902C131C63975F0040EBA6 /* character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = character.swift; sourceTree = "<group>"; };
+		04902C151C6399A00040EBA6 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		04902C171C639AF40040EBA6 /* enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				04902C081C6394FA0040EBA6 /* Assets.xcassets */,
 				04902C0A1C6394FA0040EBA6 /* LaunchScreen.storyboard */,
 				04902C0D1C6394FA0040EBA6 /* Info.plist */,
+				04902C131C63975F0040EBA6 /* character.swift */,
+				04902C151C6399A00040EBA6 /* player.swift */,
+				04902C171C639AF40040EBA6 /* enemy.swift */,
 			);
 			path = "rpg-oop";
 			sourceTree = "<group>";
@@ -135,6 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04902C181C639AF40040EBA6 /* enemy.swift in Sources */,
+				04902C161C6399A00040EBA6 /* player.swift in Sources */,
+				04902C141C63975F0040EBA6 /* character.swift in Sources */,
 				04902C041C6394FA0040EBA6 /* ViewController.swift in Sources */,
 				04902C021C6394FA0040EBA6 /* AppDelegate.swift in Sources */,
 			);
