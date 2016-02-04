@@ -15,6 +15,8 @@
 		04902C141C63975F0040EBA6 /* character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C131C63975F0040EBA6 /* character.swift */; };
 		04902C161C6399A00040EBA6 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C151C6399A00040EBA6 /* player.swift */; };
 		04902C181C639AF40040EBA6 /* enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C171C639AF40040EBA6 /* enemy.swift */; };
+		04902C1A1C639E630040EBA6 /* chimera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C191C639E630040EBA6 /* chimera.swift */; };
+		04902C1C1C63A3530040EBA6 /* devilwizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902C1B1C63A3530040EBA6 /* devilwizard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		04902C131C63975F0040EBA6 /* character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = character.swift; sourceTree = "<group>"; };
 		04902C151C6399A00040EBA6 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		04902C171C639AF40040EBA6 /* enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enemy.swift; sourceTree = "<group>"; };
+		04902C191C639E630040EBA6 /* chimera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chimera.swift; sourceTree = "<group>"; };
+		04902C1B1C63A3530040EBA6 /* devilwizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = devilwizard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				04902C131C63975F0040EBA6 /* character.swift */,
 				04902C151C6399A00040EBA6 /* player.swift */,
 				04902C171C639AF40040EBA6 /* enemy.swift */,
+				04902C191C639E630040EBA6 /* chimera.swift */,
+				04902C1B1C63A3530040EBA6 /* devilwizard.swift */,
 			);
 			path = "rpg-oop";
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			files = (
 				04902C181C639AF40040EBA6 /* enemy.swift in Sources */,
 				04902C161C6399A00040EBA6 /* player.swift in Sources */,
+				04902C1C1C63A3530040EBA6 /* devilwizard.swift in Sources */,
 				04902C141C63975F0040EBA6 /* character.swift in Sources */,
 				04902C041C6394FA0040EBA6 /* ViewController.swift in Sources */,
 				04902C021C6394FA0040EBA6 /* AppDelegate.swift in Sources */,
+				04902C1A1C639E630040EBA6 /* chimera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
