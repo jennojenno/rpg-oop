@@ -11,7 +11,7 @@ import Foundation
 class Enemy: Character {
     
     var loot: [String] {
-        return ["Rusty dagger", "Jeweled sword"]
+        return ["Rusty Dagger", "Jeweled Sword"]
     }
     
     var type: String {

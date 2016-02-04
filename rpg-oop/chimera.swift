@@ -18,7 +18,7 @@ class Chimera: Enemy {
     //This is polymorphism:  defining functions in different ways
     
     override var loot: [String] {
-        return ["Tough hide", "Chimera venom", "Rare trident"]
+        return ["Tough Hide", "Chimera Venom", "Rare Trident"]
     }
     
     override var type: String {
